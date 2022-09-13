@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаб 3</title>
+</head>
+<body>
+    <h1>Проектування та розробка веб-застосувань</h1>
+    <h2>Лабораторна робота №3</h2>
+    <h2>Виконав студент групи КН-32 Кутрик Олег</h2>
+    <h3>Завдання : розробити форму для введення результатів поточної сесії у веб систему</h3>
+    <p>Необхідно розробити форму для реєстрації учасника художнього
+        форуму. Необхідно заповнити наступні дані:
+    </p>
+    <ol>
+        <li>дані про реєстрацію, включають логін, пароль, електрону адресу,
+            улюбленого художника (обирається зі списку);
+        </li>
+        <li>
+            собисті дані, включають улюблений колір, посилання на веб-
+            сторінку з власним портфоліо, улюблений жанр у живописі (обирається зі
+            
+            списку),докладний опис власних художніх вподобань.
+        </li>
+    </ol>
+
+
+    <form action="submit" method="post">
+        <fieldset>
+        <legend>Реєстрація</legend>
+            <label>Login</label>
+            <input type="text">
+
+            <br>
+            <br>
+
+            <label>Password</label>
+            <input type="password" >
+
+            <br>
+            <br>
+
+            <label>Favorite painter</label>
+            <select name="painters" id="painters">
+                <option value="Rafael">Rafael</option>
+                <option value="Michelangelo">Michelangelo</option>
+                <option value="Dali">Dali</option>
+                <option value="Monet">Monet</option>
+            </select>
+    </fieldset>
+        
+        
+    <fieldset>
+        <legend>Особисті дані</legend>
+        <label>color</label>
+        <input type="text">
+        
+        <br>
+        <br>
+
+        <label>link to your portfolio</label>
+        <input type="url">
+
+        <br>
+        <br>
+
+        <label>genre</label>
+        <select name="genre" id="genre">
+            <option value="History Painting">History Painting</option>
+            <option value="Portrait Art">Portrait Art</option>
+            <option value="Genre Painting">Genre Painting</option>
+            <option value="Landscape Painting">Landscape Painting</option>
+            <option value="Still Life Painting">Still Life Painting</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="preferences" id="preferences" cols="30" rows="10" placeholder="Describe your preferences in painting"></textarea>
+
+    </fieldset>
+    <button type="submit">submit</button>
+    </form>
+</body>
+</html>
