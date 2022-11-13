@@ -1,0 +1,41 @@
+.contact{
+    display: flex;
+}
+.contact__left {
+    width: 50%;
+    background: #FBFBFB;
+    height: 300px;
+    text-align: center;
+    color: #373737;
+}
+.contact__right {
+    width: 50%;
+    background: #70BD59;
+    height: 300px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contact__left img {
+    margin-top: 72px;
+    width: 50px;
+}
+.contact__right svg {
+    margin-top: 72px;
+}
+.contact__title {
+    margin-top: 15px;
+}
+.contact__paragraph {
+    margin-top: 22px;
+}
+@media (max-width: 750px){
+    .contact{
+        display: block;
+    }
+    .contact__left {
+        width: 100%;
+    }
+    .contact__right {
+        width: 100%;
+    }
+}
