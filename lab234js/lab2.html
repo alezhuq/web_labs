@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Виконав студент групи КН-32 Кутрик Олег</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Лабораторна №1</a></li>
+            <li><a href="lab2.html">Лабораторна №2</a></li>
+            <li><a href="lab3.html">Лабораторна №3</a></li>
+            <li><a href="lab4.html">Лабораторна №4</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h1>Завдання на лабораторну роботу №2</h1>
+        
+        <p class="main__text">
+            На вашій сторінці є поле введення. При наведені на нього мишки
+            вивести додаткову інформацію про це поле. Ввести номер квартири з клавіатури,
+            номер під'їзду і поверх. У будинку 3 під'їзди, 9 поверхів і 108 квартир.
+            Проаналізувати правильність введення даних і видати відповідне повідомлення. 
+        </p>
+        <div class="main__input">
+            <input id="default_input" type="text" placeholder="Поле введення" title="Додаткова інформація">    
+            <div id="information"></div>
+        </div>
+        <input id="section" type="number" min="1" max="3" placeholder="Під'їзд">
+        <input id="floor" type="number" min="1" max="9" placeholder="Поверх">
+        <input id="flat" type="number" min="1" max="108" placeholder="Квартира">
+
+        <button id="button" class="main__button">Переглянути результат</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="lab2.js"></script>
+</body>
+</html>
